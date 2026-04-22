@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery | Your Curated Journey Awaits</title>
+    <meta name="description" content="Discover unique travel experiences with Discovery. Premium, curated journeys in Sri Lanka and beyond.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome & Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Premium Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo discovery-lockup">
+                <i class="fa-solid fa-earth-asia globe-icon"></i>
+                <span class="logo-disco">DISCO</span><span class="logo-very">VERY</span>
+            </div>
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <header class="header" id="navbar">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#" class="nav-branding discovery-lockup">
+                    <i class="fa-solid fa-earth-asia globe-icon"></i>
+                    <span class="logo-disco">DISCO</span><span class="logo-very">VERY</span>
+                </a>
+            </div>
+
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link active">Explore</a></li>
+                    <li><a href="#" class="nav-link">Stays</a></li>
+                    <li><a href="#" class="nav-link">Experiences</a></li>
+                    <li><a href="#" class="nav-link">Packages</a></li>
+                    <li><a href="#" class="nav-link">Journal</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-icon" title="Language">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <a href="#" class="btn-login">Log In</a>
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <!-- Background Slider -->
+            <!-- High-End Video Background -->
+            <!-- High-End Video Background -->
+            <video autoplay muted loop playsinline class="hero-video" preload="auto">
+                <source src="img/13860542_1280_720_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="hero-content">
+                <h1>Discovery.</h1>
+                <p>Private, curated adventures that take you beyond the guidebook and into the unmapped heart of Sri Lanka.</p>
+                
+                <!-- Focused Tour Search Bar -->
+                <div class="search-container">
+                    <div class="search-bar">
+                        <div class="search-item">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <div class="input-group">
+                                <label>Search Tours</label>
+                                <input type="text" id="dest-input" placeholder="Find your perfect tour plan..." autocomplete="off">
+                                <div id="search-suggestions" class="search-suggestions"></div>
+                            </div>
+                        </div>
+                        <button class="search-btn" id="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Plan My Journey</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Trust Bar -->
+        <section class="how-we-work reveal">
+            <div class="work-container">
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-label">Years of Expertise</span>
+                    </div>
+                    <div class="experience-item">
+                        <span class="exp-number">100%</span>
+                        <span class="exp-label">Curated Journeys</span>
+                    </div>
+                    <div class="experience-item">
+                        <span class="exp-number">500+</span>
+                        <span class="exp-label">Happy Explorers</span>
+                    </div>
+                    <div class="experience-item">
+                        <span class="exp-number">24/7</span>
+                        <span class="exp-label">Local Concierge</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Sri Lanka Bento Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="about-header reveal">
+                    <div class="header-left">
+                        <h2>The Emerald Jewel of the Indian Ocean.</h2>
+                    </div>
+                    <div class="header-right">
+                        <p class="about-lead">A land like no other. From ancient kingdoms carved in stone to the wild heartbeat of the jungle, Sri Lanka is a tapestry of endless discovery and soulful serendipity.</p>
+                        <p class="about-more-text">Experience the rhythmic pulses of island life as you traverse through verdant tea plantations, hidden coastal sanctuaries, and the sacred echoes of pre-historic civilization.</p>
+                        <button class="read-more-btn">
+                            Explore the Full Story <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Heritage Tile (Large) -->
+                    <div class="bento-tile tile-large reveal" style="--bg-image: url('img/ivani-de-silva-7SPIdNscD4I-unsplash.jpg');">
+                        <div class="tile-content">
+                            <span class="tile-tag">Heritage</span>
+                            <h3>Sacred Echoes</h3>
+                            <p>Walk through 2,500 years of civilization and sacred stone temples.</p>
+                        </div>
+                    </div>
+
+                    <!-- Nature Tile (Tall) -->
+                    <div class="bento-tile tile-tall reveal" style="--bg-image: url('img/lucija-ros-VC7P8p6dFIc-unsplash.jpg');">
+                        <div class="tile-content">
+                            <span class="tile-tag">Nature</span>
+                            <h3>Misty Peaks</h3>
+                            <p>Discover the verdant soul of the Hill Country and its golden tea trails.</p>
+                        </div>
+                    </div>
+
+                    <!-- Coast Tile (Small) -->
+                    <div class="bento-tile tile-small reveal" style="--bg-image: url('img/sarmat-batagov-cuZbrYoimv8-unsplash.jpg');">
+                        <div class="tile-content">
+                            <span class="tile-tag">Coastal</span>
+                            <h3>Hidden Shores</h3>
+                            <p>Untouched horizons where the sapphire ocean meets golden sands.</p>
+                        </div>
+                    </div>
+
+                    <!-- Action Tile (Green CTA) -->
+                    <div class="bento-tile tile-action reveal">
+                        <div class="action-content">
+                            <p class="action-slogan">Your adventure, perfectly curated.</p>
+                            <h3>Plan Your Journey</h3>
+                            <i class="bi bi-arrow-right-circle"></i>
+                        </div>
+                    </div>
+
+                    <!-- Safari Tile (Wide) -->
+                    <div class="bento-tile tile-wide reveal" style="--bg-image: url('img/rajiv-perera-b1jeQiJwYQI-unsplash.jpg');">
+                        <div class="tile-content">
+                            <span class="tile-tag">Wildlife</span>
+                            <h3>Wild Heartland</h3>
+                            <p>Witness the untamed majesty of leopards and elephants in their natural kingdom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section id="who-we-are" class="who-we-are section">
+            <div class="who-container">
+                <div class="who-image-box reveal">
+                    <div class="who-image-wrapper">
+                        <img src="img/f426bc02-e46e-426f-8e5e-4abf5b79745f.jpg" alt="Local Experience">
+                    </div>
+                </div>
+                <div class="who-content reveal">
+                    <span class="story-tag">Our Message</span>
+                    <h2>The Best Value for Your Journey.</h2>
+                    <p class="story-lead">We are the best company if you are looking for affordable, high-quality budget tours across Sri Lanka.</p>
+                    <p class="story-body">Our team is dedicated to providing exceptional travel experiences without the premium price tag. We believe that everyone should have the chance to explore the beauty of our island, from its ancient cities to its pristine beaches, all while staying within a comfortable budget.</p>
+                    <a href="#" class="story-cta">Explore Budget Packages <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tour Packages Section -->
+        <section id="tours" class="tours section">
+            <div class="tours-header reveal">
+                <span class="section-tag">Best Value Tours</span>
+                <h2>Find Your Next Escape.</h2>
+            </div>
+            <div id="tour-grid" class="tour-grid reveal">
+                <!-- Tours will be rendered here via JS -->
+            </div>
+            <div id="no-results" class="no-results" style="display: none;">
+                <i class="bi bi-search"></i>
+                <p>We couldn't find any tours matching your search. Try a different keyword!</p>
+            </div>
+        </section>
+        <!-- Feedback Section -->
+        <section id="feedback" class="feedback section">
+            <div class="feedback-header reveal">
+                <span class="section-tag">Guest Perspectives</span>
+                <h2>Stories from the Road.</h2>
+                <button id="open-feedback" class="btn-share-story">Share Your Story <i class="bi bi-pencil-square"></i></button>
+            </div>
+            <div class="feedback-grid reveal">
+                <div class="feedback-card">
+                    <div class="feedback-stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="tour-badge">Cultural Journey</span>
+                    <p>"An incredible journey that didn't break the bank. The Cultural Triangle tour was perfectly paced. The attention to local detail was unmatched. Highly recommended for soul-seekers!"</p>
+                    <div class="feedback-user">
+                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80" alt="James & Sarah" class="user-avatar">
+                        <div class="user-info">
+                            <span>James & Sarah</span>
+                            <small>United Kingdom</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feedback-card">
+                    <div class="feedback-stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    </div>
+                    <span class="tour-badge badge-wildlife">Wild Safari</span>
+                    <p>"Discovery truly knows the island's hidden spots. We saw leopards in Yala without the crowds. Absolute magic!"</p>
+                    <div class="feedback-user">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="user-avatar">
+                        <div class="user-info">
+                            <span>Elena Rostova</span>
+                            <small>Germany</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback-card">
+                    <div class="feedback-stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="tour-badge badge-budget">Budget Explorer</span>
+                    <p>"Authentic, ethical, and affordable. The best way to experience the real Sri Lanka. We'll be back for the East Coast next!"</p>
+                    <div class="feedback-user">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Kenji Tanaka" class="user-avatar">
+                        <div class="user-info">
+                            <span>Kenji Tanaka</span>
+                            <small>Japan</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback-card">
+                    <div class="feedback-stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="tour-badge" style="background: rgba(233, 30, 99, 0.1); color: #e91e63;">Highland Explorer</span>
+                    <p>"Watching the sunrise from Ella's Rock was the highlight of our year. Professional guides and seamless logistics."</p>
+                    <div class="feedback-user">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Marcus Weber" class="user-avatar">
+                        <div class="user-info">
+                            <span>Marcus Weber</span>
+                            <small>Switzerland</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Questions Section -->
+        <section id="faq" class="faq section">
+            <div class="faq-container">
+                <div class="faq-header reveal">
+                    <span class="section-tag">Support</span>
+                    <h2>Common Questions.</h2>
+                    <p>Everything you need to know before your journey begins.</p>
+                </div>
+                <div class="faq-list reveal">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is included in the tour price?</span>
+                            <i class="bi bi-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our budget tours are all-inclusive of logistics within Sri Lanka. This includes professional English-speaking local guides, 3-star boutique accommodation, all air-conditioned transportation, breakfast, and entrance fees to the major sites listed in your specific itinerary. We believe in total transparency—no hidden costs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How do I secure my booking?</span>
+                            <i class="bi bi-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Booking is simple and secure. Once you select your package and click 'Book It Now', you'll fill in a brief interest form. A Fellow Guide will reach out within 24 hours to confirm availability and process your small deposit (usually 20%). The remaining balance is only payable upon your arrival in Sri Lanka.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is it safe for solo budget travelers?</span>
+                            <i class="bi bi-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. Sri Lanka is known for its legendary hospitality. Our tours are designed to be safe, social, and supportive. We vetted all our transport partners and accommodation options personally, and our 24/7 Fellow Assistant chatbot and phone support are always available during your stay.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I customize a pre-made package?</span>
+                            <i class="bi bi-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While our packages are curated for the best value, we love helping you make it your own. Whether you want to add an extra night in Ella or swap a temple visit for a cooking class, our team can adjust any budget plan to suit your heart's desire. Just mention it during your initial booking call.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modern Mega Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand reveal">
+                <h2 class="footer-logo">DISCOVERY.</h2>
+                <p>Curating exceptional journeys through the lens of luxury and local soul.</p>
+            </div>
+            
+            <div class="footer-grid reveal">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">The Journal</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Private Tours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#">Cultural Triangle</a></li>
+                        <li><a href="#">Hill Country</a></li>
+                        <li><a href="#">Southern Coast</a></li>
+                        <li><a href="#">Wild Heartland</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Travel FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p class="footer-contact">hello@discovery.com</p>
+                    <p class="footer-contact">+94 (11) 234 5678</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Join the journal for exclusive travel stories and curated offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Discovery Sri Lanka. All Rights Reserved.</p>
+                    <p class="made-in">Handcrafted in Colombo <i class="bi bi-heart-fill"></i></p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Popup -->
+    <div id="cookie-popup" class="cookie-popup">
+        <div class="cookie-content">
+            <i class="bi bi-info-circle"></i>
+            <p>We use cookies to enhance your journey with us. By continuing, you agree to our use of cookies.</p>
+            <button id="accept-cookies" class="btn-cookie">Accept</button>
+        </div>
+    </div>
+
+    <!-- Fellow Assistant Chatbot -->
+    <div id="chat-toggle" class="chat-toggle">
+        <div id="chat-welcome" class="chat-welcome">Ayubowan! 👋 Need help choosing a tour?</div>
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <div class="concierge-profile">
+                <div class="concierge-avatar">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Concierge">
+                    <div class="online-indicator"></div>
+                </div>
+                <div class="concierge-info">
+                    <span class="concierge-name">Tharaka</span>
+                    <span class="concierge-status">Lankan Travel Designer</span>
+                </div>
+            </div>
+            <button id="close-chat"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-msg bot">
+                <p>Ayubowan! 🙏 I'm Tharaka, your Fellow Concierge. I specialize in designing perfect, budget-friendly journeys across our beautiful island. How can I assist you today?</p>
+            </div>
+            <div class="chat-hints">
+                <button onclick="window.searchInput.value='Safari'; window.filterTours();">Safari Pricing</button>
+                <button onclick="window.searchInput.value='Culture'; window.filterTours();">Cultural Tours</button>
+                <button onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'});">View FAQs</button>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <!-- Footer content if any -->
+        </div>
+    </div> <!-- Correctly closing chat-window -->
+
+    <!-- Premium Login Modal -->
+    <div id="login-modal" class="login-modal">
+        <div class="modal-content login-card">
+            <div class="modal-header">
+                <div class="login-brand">
+                    <i class="fa-solid fa-earth-asia globe-icon"></i>
+                    <span class="logo-disco">DISCO</span><span class="logo-very">VERY</span>
+                </div>
+                </div>
+                <button id="close-login" class="btn-close-modal"><i class="bi bi-x-lg"></i></button>
+            </div>
+            
+            <div id="login-form-content">
+                <div class="login-intro">
+                    <h3>Welcome Back</h3>
+                    <p>Enter your details to continue your journey.</p>
+                </div>
+                
+                <form id="login-form" class="login-form">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <div class="input-with-icon">
+                            <i class="bi bi-envelope"></i>
+                            <input type="email" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-with-icon">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" id="login-pass" placeholder="••••••••" required>
+                            <button type="button" class="btn-toggle-pass"><i class="bi bi-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox"> <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-submit-login">
+                        Log In <i class="bi bi-arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="social-login-divider">
+                    <span>Or continue with</span>
+                </div>
+
+                <div class="social-login-grid">
+                    <button class="btn-social google">
+                        <i class="bi bi-google"></i>
+                    </button>
+                    <button class="btn-social apple">
+                        <i class="bi bi-apple"></i>
+                    </button>
+                    <button class="btn-social facebook">
+                        <i class="bi bi-facebook"></i>
+                    </button>
+                </div>
+
+                <div class="login-footer">
+                    Don't have an account? <a href="#">Create Journey</a>
+                </div>
+            </div>
+
+            <!-- Success State (Hidden by default) -->
+            <div id="login-success" class="login-success" style="display: none;">
+                <div class="success-icon"><i class="bi bi-check-circle-fill"></i></div>
+                <h3>Authentication Successful</h3>
+                <p>Welcome back, traveler! Preparing your personalized itinerary...</p>
+                <button class="btn-done" id="login-done">Access Journal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Submission Modal -->
+    <div id="feedback-modal" class="feedback-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Share Your Journey</h3>
+                <button id="close-feedback" class="btn-close-modal"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <form id="feedback-form" class="feedback-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" id="fb-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Country</label>
+                        <input type="text" id="fb-country" placeholder="e.g. Germany" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Tour Category</label>
+                    <select id="fb-category" required>
+                        <option value="" disabled selected>Select your tour...</option>
+                        <option value="Cultural Journey">Cultural Journey</option>
+                        <option value="Wild Safari">Wild Safari</option>
+                        <option value="Budget Explorer">Budget Explorer</option>
+                        <option value="Highland Explorer">Highland Explorer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Rating</label>
+                    <div class="star-rating" id="star-rating">
+                        <i class="bi bi-star" data-rating="1"></i>
+                        <i class="bi bi-star" data-rating="2"></i>
+                        <i class="bi bi-star" data-rating="3"></i>
+                        <i class="bi bi-star" data-rating="4"></i>
+                        <i class="bi bi-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="fb-rating" value="0" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea id="fb-message" placeholder="Describe your experience with us..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit-feedback">
+                    Post Story <i class="bi bi-send-fill"></i>
+                </button>
+            </form>
+            <div id="feedback-success" class="feedback-success" style="display: none;">
+                <div class="success-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <h3>Ayubowan! 🙏</h3>
+                <p>Your story has been received. Thank you for sharing your journey with the Fellow community!</p>
+                <button type="button" id="close-success" class="btn-done">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const TOURS_DATA = [
+            {
+                id: 1,
+                title: "Sigiriya Heritage Trail",
+                desc: "Climb the ancient rock fortress and explore the Royal Gardens. A perfect blend of history and breathtaking views.",
+                price: "45",
+                days: "1 Day",
+                category: "Culture",
+                dest: "Sigiriya",
+                img: "img/f60e45b2-b97c-4817-8ce3-903aad9819e5.jpg"
+            },
+            {
+                id: 2,
+                title: "Yala Wildlife Safari",
+                desc: "Witness the majestic leopards and wild elephants in their natural habitat. The ultimate adventure for nature lovers.",
+                price: "85",
+                days: "1 Day",
+                category: "Wildlife",
+                dest: "Yala National Park",
+                img: "img/d593c90a-efb5-48ed-9c7a-d09e826b1f0e.jpg"
+            },
+            {
+                id: 3,
+                title: "Mirissa Ocean Serenity",
+                desc: "Relax on golden sands and embark on a whale watching adventure. Experience the best of Southern coastline.",
+                price: "60",
+                days: "2 Days",
+                category: "Relaxation",
+                dest: "Mirissa, Galle",
+                img: "img/kevin-olson-ScBHbYokiQE-unsplash.jpg"
+            },
+            {
+                id: 4,
+                title: "Ella Highland Explorer",
+                desc: "Hike the iconic Nine Arch Bridge and Little Adam's Peak. A mist-covered journey through the heart of the tea country.",
+                price: "75",
+                days: "3 Days",
+                category: "Adventure",
+                dest: "Ella, Nuwara Eliya",
+                img: "img/mariana-proenca-5o3ODxRQCfI-unsplash.jpg"
+            },
+            {
+                id: 5,
+                title: "Sinharaja Rainforest Trek",
+                desc: "An immersive deep-jungle experience in Sri Lanka's last viable primeval rainforest. Perfect for nature lovers.",
+                price: "110",
+                days: "2 Days",
+                category: "Wildlife",
+                dest: "Sinharaja Forest",
+                img: "img/javier-saint-jean-r4pIcB2reug-unsplash.jpg"
+            },
+            {
+                id: 6,
+                title: "Trincomalee Coastal Bliss",
+                desc: "Discover the crystal clear waters of Nilaveli and Pigeon Island. The ultimate East Coast budget getaway.",
+                price: "90",
+                days: "5 Days",
+                category: "Relaxation",
+                dest: "Trincomalee",
+                img: "img/petr-sevcovic-cBX6hBxRptY-unsplash.jpg"
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Global Elements
+            const header = document.querySelector('.header');
+            const tourGrid = document.getElementById('tour-grid');
+            const noResults = document.getElementById('no-results');
+            const searchInput = document.getElementById('dest-input');
+            const searchBtn = document.getElementById('search-btn');
+            const suggestionsBox = document.getElementById('search-suggestions');
+            const chatToggle = document.getElementById('chat-toggle');
+            const chatWindow = document.getElementById('chat-window');
+            const closeChat = document.getElementById('close-chat');
+            const chatWelcome = document.getElementById('chat-welcome');
+            const cookiePopup = document.getElementById('cookie-popup');
+            const acceptBtn = document.getElementById('accept-cookies');
+            const slider = document.querySelector('.hero-slider');
+            const slides = document.querySelectorAll('.hero-slide');
+
+            // Expose for Global HTML onclicks
+            window.searchInput = searchInput;
+            window.filterTours = () => {
+                const query = searchInput.value.toLowerCase();
+                if (query === "") { 
+                    window.renderTours(TOURS_DATA); 
+                    return; 
+                }
+                const matches = [], recommendations = [];
+                TOURS_DATA.forEach(tour => {
+                    if (tour.title.toLowerCase().includes(query) || 
+                        tour.dest.toLowerCase().includes(query) || 
+                        tour.category.toLowerCase().includes(query)) matches.push(tour);
+                    else recommendations.push(tour);
+                });
+                window.renderTours(matches, recommendations);
+                const toursSection = document.getElementById('tours');
+                if (toursSection) toursSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            };
+
+            window.renderTours = (matches, recommendations = []) => {
+                if(!tourGrid) return;
+                tourGrid.innerHTML = '';
+                const allToDisplay = [...matches, ...recommendations];
+                if (allToDisplay.length === 0 && searchInput.value !== "") {
+                    noResults.style.display = 'block';
+                } else {
+                    noResults.style.display = 'none';
+                    allToDisplay.forEach(tour => {
+                        const isMatch = matches.includes(tour);
+                        const card = document.createElement('div');
+                        card.className = `tour-card reveal active ${isMatch ? 'match-card' : 'rec-card'}`;
+                        card.innerHTML = `
+                            <div class="tour-img" style="background-image: url('${tour.img}')">
+                                <div class="tour-days">${tour.days}</div>
+                                ${isMatch ? '<div class="match-badge">Match</div>' : ''}
+                            </div>
+                            <div class="tour-info">
+                                <div class="tour-meta">
+                                    <span class="tour-cat">${tour.category}</span>
+                                    <span class="tour-price">$${tour.price}<span>/day</span></span>
+                                </div>
+                                <h3>${tour.title}</h3>
+                                <p>${tour.desc}</p>
+                                <button class="btn-book">Book It Now <i class="bi bi-arrow-right-short"></i></button>
+                            </div>
+                        `;
+                        tourGrid.appendChild(card);
+                    });
+                }
+            };
+
+            // Scroll Logic
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            });
+
+            // Reveal Logic
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+            }, { threshold: 0.15 });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // Cookie Logic
+            if(cookiePopup) {
+                setTimeout(() => { cookiePopup.classList.add('active'); }, 2000);
+                if(acceptBtn) acceptBtn.addEventListener('click', () => cookiePopup.style.display = 'none');
+            }
+
+            // Hero Section is now powered by a cinematic video background. 
+            // Previous slider logic removed for performance optimization.
+
+            // Search Listeners
+            if(searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    const query = e.target.value;
+                    if (!query) { suggestionsBox.style.display = 'none'; window.renderTours(TOURS_DATA); return; }
+                    const matches = TOURS_DATA.filter(t => t.title.toLowerCase().includes(query) || t.dest.toLowerCase().includes(query));
+                    if (matches.length > 0) {
+                        suggestionsBox.innerHTML = '';
+                        matches.forEach(m => {
+                            const div = document.createElement('div');
+                            div.className = 'suggestion-item';
+                            div.innerHTML = `<i class="bi bi-geo-alt"></i> <span>${m.title}</span> <small>${m.dest}</small>`;
+                            div.onclick = () => { searchInput.value = m.title; suggestionsBox.style.display = 'none'; window.filterTours(); };
+                            suggestionsBox.appendChild(div);
+                        });
+                        suggestionsBox.style.display = 'block';
+                    } else suggestionsBox.style.display = 'none';
+                });
+            }
+
+            if(searchBtn) searchBtn.addEventListener('click', () => { suggestionsBox.style.display = 'none'; window.filterTours(); });
+            if(searchInput) searchInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') { suggestionsBox.style.display = 'none'; window.filterTours(); } });
+            
+            document.addEventListener('click', (e) => { 
+                if (suggestionsBox && !searchInput.contains(e.target) && !suggestionsBox.contains(e.target)) {
+                    suggestionsBox.style.display = 'none'; 
+                }
+            });
+
+            // Support Logic
+            document.querySelectorAll('.faq-question').forEach(item => {
+                item.addEventListener('click', () => {
+                    const faqItem = item.parentElement;
+                    faqItem.classList.toggle('active');
+                    const icon = item.querySelector('i');
+                    if(icon) {
+                        icon.classList.toggle('bi-plus');
+                        icon.classList.toggle('bi-dash');
+                    }
+                });
+            });
+
+            if(chatToggle) {
+                chatToggle.addEventListener('click', () => { 
+                    chatWindow.classList.add('active'); 
+                    if(chatWelcome) chatWelcome.classList.remove('active'); 
+                });
+            }
+            if(closeChat) closeChat.addEventListener('click', () => chatWindow.classList.remove('active'));
+            
+            setTimeout(() => { 
+                if (chatWindow && !chatWindow.classList.contains('active') && chatWelcome) {
+                    chatWelcome.classList.add('active'); 
+                }
+            }, 3000);
+
+            // Initial Render
+            window.renderTours(TOURS_DATA);
+
+            // Feedback Modal Logic
+            const fbModal = document.getElementById('feedback-modal');
+            const openFbBtn = document.getElementById('open-feedback');
+            const closeFbBtn = document.getElementById('close-feedback');
+            const fbForm = document.getElementById('feedback-form');
+            const fbSuccess = document.getElementById('feedback-success');
+            const closeSuccessBtn = document.getElementById('close-success');
+            const stars = document.querySelectorAll('#star-rating i');
+            const ratingInput = document.getElementById('fb-rating');
+
+            if(openFbBtn) {
+                openFbBtn.addEventListener('click', () => {
+                    fbModal.classList.add('active');
+                    fbForm.style.display = 'flex';
+                    fbSuccess.style.display = 'none';
+                    fbForm.reset();
+                    resetStars();
+                });
+            }
+
+            if(closeFbBtn) closeFbBtn.addEventListener('click', () => fbModal.classList.remove('active'));
+            if(window) window.addEventListener('click', (e) => { if(e.target === fbModal) fbModal.classList.remove('active'); });
+
+            // Star Rating Logic
+            stars.forEach(star => {
+                star.addEventListener('mouseover', function() {
+                    const r = this.dataset.rating;
+                    highlightStars(r);
+                });
+                star.addEventListener('mouseleave', () => highlightStars(ratingInput.value));
+                star.addEventListener('click', function() {
+                    ratingInput.value = this.dataset.rating;
+                    highlightStars(this.dataset.rating);
+                });
+            });
+
+            function highlightStars(r) {
+                stars.forEach(s => {
+                    if(s.dataset.rating <= r) s.classList.add('active');
+                    else s.classList.remove('active');
+                });
+            }
+
+            function resetStars() {
+                ratingInput.value = 0;
+                highlightStars(0);
+            }
+
+            // Form Submission
+            if(fbForm) {
+                fbForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    const feedbackData = {
+                        name: document.getElementById('fb-name').value,
+                        country: document.getElementById('fb-country').value,
+                        category: document.getElementById('fb-category').value,
+                        rating: ratingInput.value,
+                        message: document.getElementById('fb-message').value,
+                        date: new Date().toISOString()
+                    };
+
+                    // Save to LocalStorage (Simulated Database)
+                    const existingData = JSON.parse(localStorage.getItem('user_feedback') || '[]');
+                    existingData.push(feedbackData);
+                    localStorage.setItem('user_feedback', JSON.stringify(existingData));
+
+                    // Show Success
+                    fbForm.style.display = 'none';
+                    fbSuccess.style.display = 'block';
+                });
+            }
+
+            if(closeSuccessBtn) {
+                closeSuccessBtn.addEventListener('click', () => {
+                    fbModal.classList.remove('active');
+                });
+            }
+
+            // Mobile Menu Toggle
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const navCenter = document.querySelector('.nav-center');
+            const navLinksArr = document.querySelectorAll('.nav-link');
+
+            if(mobileToggle) {
+                mobileToggle.addEventListener('click', () => {
+                    mobileToggle.classList.toggle('active');
+                    navCenter.classList.toggle('active');
+                    document.body.classList.toggle('no-scroll'); // Prevent scroll when menu open
+                });
+            }
+
+            // Close menu when a link is clicked
+            navLinksArr.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileToggle.classList.remove('active');
+                    navCenter.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
+
+            // Login Modal Logic
+            const loginBtn = document.querySelector('.btn-login');
+            const loginModal = document.getElementById('login-modal');
+            const closeLogin = document.getElementById('close-login');
+            const loginForm = document.getElementById('login-form');
+            const loginFormContent = document.getElementById('login-form-content');
+            const loginSuccess = document.getElementById('login-success');
+            const loginDone = document.getElementById('login-done');
+            const togglePass = document.querySelector('.btn-toggle-pass');
+            const passInput = document.getElementById('login-pass');
+
+            if(loginBtn && loginModal) {
+                loginBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    loginModal.classList.add('active');
+                    document.body.classList.add('no-scroll');
+                });
+            }
+
+            if(closeLogin) {
+                closeLogin.addEventListener('click', () => {
+                    loginModal.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            }
+
+            if(togglePass && passInput) {
+                togglePass.addEventListener('click', () => {
+                    const type = passInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    passInput.setAttribute('type', type);
+                    togglePass.querySelector('i').classList.toggle('bi-eye');
+                    togglePass.querySelector('i').classList.toggle('bi-eye-slash');
+                });
+            }
+
+            if(loginForm) {
+                loginForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    loginFormContent.style.display = 'none';
+                    loginSuccess.style.display = 'block';
+                });
+            }
+
+            if(loginDone) {
+                loginDone.addEventListener('click', () => {
+                    loginModal.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                    // Reset form for next time
+                    setTimeout(() => {
+                        loginFormContent.style.display = 'block';
+                        loginSuccess.style.display = 'none';
+                        loginForm.reset();
+                    }, 500);
+                });
+            }
+
+            // Close modals on outside click
+            window.addEventListener('click', (e) => {
+                if(e.target === loginModal) {
+                    loginModal.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                }
+                if(e.target === document.getElementById('feedback-modal')) {
+                    document.getElementById('feedback-modal').classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                }
+            });
+        });
+
+        // Preloader
+        window.addEventListener('load', () => {
+            const p = document.getElementById('preloader');
+            if(p) setTimeout(() => { p.style.opacity = '0'; p.style.visibility = 'hidden'; }, 800);
+        });
+    </script>
+</body>
+</html>
