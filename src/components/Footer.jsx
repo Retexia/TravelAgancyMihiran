@@ -11,12 +11,12 @@ const Footer = () => {
                         <div className="logo-box">
                             <i className="fa-solid fa-wind"></i>
                         </div>
-                        <span className="logo-text" style={{color: 'white'}}>North Wind<span className="logo-dot">.</span></span>
+                        <span className="logo-text" style={{color: 'white'}}>Benvonto<span className="logo-dot">.</span></span>
                     </Link>
                     <p style={{color: 'rgba(255,255,255,0.6)', lineHeight: 1.8}}>
                         Sri Lanka's leading boutique travel agency. We reveal the island's soul through curated heritage, wilderness, and luxury experiences.
                     </p>
-                    <div style={{display: 'flex', gap: '20px', marginTop: '30px', fontSize: '1.2rem'}}>
+                    <div className="footer-social" style={{display: 'flex', gap: '20px', marginTop: '30px', fontSize: '1.2rem'}}>
                         <a href="#" className="footer-link"><i className="fa-brands fa-instagram"></i></a>
                         <a href="#" className="footer-link"><i className="fa-brands fa-facebook-f"></i></a>
                         <a href="#" className="footer-link"><i className="fa-brands fa-x-twitter"></i></a>
@@ -62,8 +62,8 @@ const Footer = () => {
             </div>
 
             <div className="footer-bottom">
-                <div>© 2024 North Wind. Tour Agency Sri Lanka. All rights reserved.</div>
-                <div style={{display: 'flex', gap: '30px'}}>
+                <div>© 2024 Benvonto. Tour Agency Sri Lanka. All rights reserved.</div>
+                <div className="footer-bottom-links" style={{display: 'flex', gap: '30px'}}>
                     <a href="#" className="footer-link" style={{fontSize: '0.75rem'}}>Privacy Policy</a>
                     <a href="#" className="footer-link" style={{fontSize: '0.75rem'}}>Terms of Service</a>
                 </div>

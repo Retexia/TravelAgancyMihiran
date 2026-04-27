@@ -22,7 +22,8 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-        <header className={`brand-header ${isScrolled ? 'header-scrolled' : ''}`}>
+        <>
+            <header className={`brand-header ${isScrolled ? 'header-scrolled' : ''}`}>
             {/* Smooth-Hiding Advertising Banner */}
             <div className={`banner-wrapper ${!bannerVisible || isScrolled ? 'banner-hidden' : ''}`}>
                 <div className="banner">
@@ -41,7 +42,7 @@ const Navbar = () => {
                     <div className="logo-box">
                         <i className="fa-solid fa-wind"></i>
                     </div>
-                    <span className="logo-text">North Wind<span className="logo-dot">.</span></span>
+                    <span className="logo-text">Benvonto<span className="logo-dot">.</span></span>
                 </Link>
 
                 <div className="nav-center-wrapper" style={{flex: 2}}>
@@ -63,18 +64,20 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            {/* Mobile Navigation Drawer */}
-            <div className={`mobile-overlay ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
-            <div className={`mobile-drawer ${isMenuOpen ? 'open' : ''}`}>
-                <div className="drawer-close" onClick={toggleMenu}>
-                    <i className="fa-solid fa-xmark"></i>
-                </div>
-                <Link to="/" className="nav-item" onClick={toggleMenu}>Introduction</Link>
-                <Link to="/packages" className="nav-item" onClick={toggleMenu}>Packages</Link>
-                <Link to="/sri-lanka" className="nav-item" onClick={toggleMenu}>Sri Lankan Heritage</Link>
-                <Link to="/contact" className="btn-modern btn-black" onClick={toggleMenu} style={{textAlign: 'center'}}>Contact Us</Link>
-            </div>
         </header>
+        <div className={`mobile-overlay ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
+        <div className={`mobile-drawer ${isMenuOpen ? 'open' : ''}`}>
+            <div className="drawer-close" onClick={toggleMenu}>
+                <i className="fa-solid fa-xmark"></i>
+            </div>
+            <Link to="/" className="nav-item" onClick={toggleMenu}>Introduction</Link>
+            <Link to="/packages" className="nav-item" onClick={toggleMenu}>Packages</Link>
+            <Link to="/sri-lanka" className="nav-item" onClick={toggleMenu}>Sri Lankan Heritage</Link>
+            <a href="/#journeys" className="nav-item" onClick={toggleMenu}>Exclusive Journeys</a>
+            <a href="/#stays" className="nav-item" onClick={toggleMenu}>Private Stays</a>
+            <Link to="/contact" className="btn-modern btn-black" onClick={toggleMenu} style={{textAlign: 'center', marginTop: '20px'}}>Contact Us</Link>
+        </div>
+        </>
     );
 };
 

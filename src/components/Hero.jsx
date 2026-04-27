@@ -73,7 +73,7 @@ const Hero = ({ onSearch }) => {
                             <input 
                                 type="text" 
                                 className="hero-search-input" 
-                                placeholder="Where would you like to go?" 
+                                placeholder="Find your perfect plan" 
                                 value={searchTerm}
                                 onChange={handleSearchChange}
                                 onFocus={() => searchTerm.length > 1 && setShowSuggestions(true)}

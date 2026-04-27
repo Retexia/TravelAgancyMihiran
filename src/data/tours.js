@@ -1,5 +1,6 @@
-import tourCover from '../assets/artem-beliaikin-pDiWpjV14F0-unsplash.jpg';
+import tourCover from '../assets/praveen-maleesha-5XSOMBEhJWQ-unsplash.jpg';
 import southernCover from '../assets/kevin-olson-ScBHbYokiQE-unsplash.jpg';
+import adventureCover from '../assets/etienne-boulanger-C5yfbvMWxC8-unsplash.jpg';
 
 export const tourPackages = [
     {
@@ -40,6 +41,25 @@ export const tourPackages = [
     },
     {
         id: 3,
+        name: "7-Day Scenic Adventure",
+        days: "7 Days",
+        description: "Journey through the emerald mountains of Ella, the wild jungles of Yala, and the golden shores of Mirissa. A perfect blend of nature, wildlife, and coastal bliss.",
+        price: "$680",
+        image: adventureCover,
+        itinerary: [
+            { day: 1, title: "Arrival | Ella", activities: ["Airport meet & greet", "Scenic drive to Ella", "Mountains & Waterfalls"], desc: "Travel through lush tea estates to the mountain village of Ella." },
+            { day: 2, title: "Explore Ella", activities: ["Nine Arch Bridge", "Little Adam's Peak", "Ella Rock (Optional)"], desc: "Hike to panoramic viewpoints and discover colonial-era architecture." },
+            { day: 3, title: "Ella → Yala", activities: ["Transfer to Tissamaharama", "Evening Yala Safari"], desc: "Encounter leopards, elephants, and crocodiles in their natural habitat." },
+            { day: 4, title: "Yala → Mirissa", activities: ["Travel to Coast", "Beach relaxation"], desc: "Unwind on golden sands with palm trees and calm blue waters." },
+            { day: 5, title: "Leisure in Mirissa", activities: ["Whale watching (Optional)", "Coastal exploring"], desc: "Spot blue whales in the ocean or relax at local seaside cafés." },
+            { day: 6, title: "Galle & Hikkaduwa", activities: ["Madu River safari", "Galle Fort visit"], desc: "Explore the historic Dutch Fort and enjoy a peaceful river boat ride." },
+            { day: 7, title: "Departure", activities: ["Transfer to airport"], desc: "Final journey back to the airport for your flight home." }
+        ],
+        inclusions: ["Accommodation with breakfast", "Airport pick-up & drop-off", "Private transport (car/tuk-tuk)", "Yala safari experience", "Madu River safari", "Visit to Galle Fort"],
+        exclusions: ["International flights", "Visa fees", "Lunch & Dinner", "Entrance fees"]
+    },
+    {
+        id: 4,
         name: "5-Day Mist & Mountains",
         days: "5 Days",
         description: "Venture into the emerald heart of Sri Lanka. Traverse the misty tea plantations of Nuwara Eliya and hike the scenic trails of Horton Plains.",
@@ -56,7 +76,7 @@ export const tourPackages = [
         exclusions: ["International flights", "Tips"]
     },
     {
-        id: 4,
+        id: 5,
         name: "6-Day Wild Safari Expedition",
         days: "6 Days",
         description: "Experience the raw beauty of Sri Lanka's wildlife. Encounter leopards in Yala and explore the untamed jungles of Udawalawe.",
@@ -74,7 +94,7 @@ export const tourPackages = [
         exclusions: ["International flights", "Dinner"]
     },
     {
-        id: 5,
+        id: 6,
         name: "3-Day Galle Fort Escape",
         days: "3 Days",
         description: "A quick but immersive journey into the colonial heart of Sri Lanka. Walk the historic ramparts and enjoy boutique coastal living.",
@@ -89,12 +109,12 @@ export const tourPackages = [
         exclusions: ["Lunch and dinner"]
     },
     {
-        id: 6,
+        id: 7,
         name: "Into the Wild",
         days: "4 Days",
         description: "A deep dive into the rainforest and untamed landscapes. Experience the raw biodiversity of Sinharaja and the hidden waterfalls of the south.",
         price: "$480",
-        image: "https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1580982327559-c1202864eb05?auto=format&fit=crop&q=80&w=1200",
         itinerary: [
             { day: 1, title: "Arrival | Sinharaja", activities: ["Airport pick-up", "Jungle lodge check-in"], desc: "Enter the heart of the last primeval rainforest in Sri Lanka." },
             { day: 2, title: "Rainforest Trek", activities: ["Guided jungle hike", "Bird watching"], desc: "Discover endemic species and the vibrant life under the canopy." },
